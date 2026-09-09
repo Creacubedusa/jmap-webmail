@@ -43,3 +43,7 @@ next-env.d.ts
 
 # claude code
 .claude/
+
+# cf worker opennext
+.open-next
+.wrangler
