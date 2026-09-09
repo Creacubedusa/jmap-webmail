@@ -27,10 +27,16 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "cloudflare-build": "opennextjs-cloudflare build",
+    "preview": "pnpm cloudflare-build && opennextjs-cloudflare preview",
+    "deploy": "pnpm cloudflare-build && wrangler deploy",
+    "upload": "pnpm cloudflare-build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",    
     "prepare": "husky",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.6",
     "@tanstack/react-virtual": "^3.13.18",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -66,6 +72,7 @@
     "jsdom": "^28.1.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "wrangler": "^4.130.0"
   }
 }
