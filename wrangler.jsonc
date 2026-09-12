@@ -20,6 +20,9 @@
   "limits": {
     "cpu_ms": 30000
   },
+  "dev": {
+    "ip": "0.0.0.0",
+  },
   "vars": {
     "NEXT_BASE_URL": "https://qmail.que.is"
   }
