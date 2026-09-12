@@ -234,6 +234,16 @@ npm run build
 npm start
 ```
 
+### Cloudflare Worker
+
+```bash
+pnpm run dev                # Run the dev deployment locally     
+pnpm run cloudflare-build   # Make production build
+pnpm run preview            # View cloudflare worker locally example without deploying to online workers
+pnpm run deploy             # Deploy and configure into cloudflare
+pnpm run upload             # After initial deploy , to update deployed worker
+```
+
 ### Docker
 
 ```bash
